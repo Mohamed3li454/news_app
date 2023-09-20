@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Home_view extends StatelessWidget {
   const Home_view({super.key});
 
@@ -22,9 +23,16 @@ class Home_view extends StatelessWidget {
           ),
         ),
         body: Container(
-          child: Text("Sports"),
+          height: 150,
+          width: 100,
+          // ignore: sort_child_properties_last
+          child: const Center(
+            child: Text("Sports"),
+          ),
           decoration: BoxDecoration(
-            image: DecorationImage(image: AssetImage("assets/sports.avif")),
+            borderRadius: BorderRadius.circular(16),
+            image: const DecorationImage(
+                image: AssetImage("assets/technology.jpeg")),
           ),
         ),
       ),
