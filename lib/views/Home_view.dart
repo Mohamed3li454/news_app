@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/items/listview_item.dart';
 
 // ignore: camel_case_types
 class Home_view extends StatelessWidget {
@@ -22,19 +23,8 @@ class Home_view extends StatelessWidget {
             ],
           ),
         ),
-        body: Container(
-          height: 150,
-          width: 100,
-          // ignore: sort_child_properties_last
-          child: const Center(
-            child: Text("Sports"),
-          ),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16),
-            image: const DecorationImage(
-                image: AssetImage("assets/technology.jpeg")),
-          ),
-        ),
+        // ignore: prefer_const_constructors
+        body: listview_item(),
       ),
     );
   }
