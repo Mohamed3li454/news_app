@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/items/listview_item.dart';
+import 'package:news_app/items/News_listview.dart';
+import 'package:news_app/items/listview_Box.dart';
 
 // ignore: camel_case_types
 class Home_view extends StatelessWidget {
@@ -24,7 +25,20 @@ class Home_view extends StatelessWidget {
           ),
         ),
         // ignore: prefer_const_constructors
-        body: listview_item(),
+        body: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: CustomScrollView(
+              physics: const BouncingScrollPhysics(),
+              slivers: [
+                SliverToBoxAdapter(
+                  child: listview_Boxs(),
+                ),
+                const SliverToBoxAdapter(
+                  child: SizedBox(height: 12),
+                ),
+                const News_list_view()
+              ],
+            )),
       ),
     );
   }

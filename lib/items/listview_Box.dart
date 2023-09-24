@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/items/Cards_item.dart';
+import 'package:news_app/items/Boxs_item.dart';
 import 'package:news_app/models/card_model.dart';
 
 // ignore: must_be_immutable, camel_case_types
-class listview_item extends StatelessWidget {
-  listview_item({
+class listview_Boxs extends StatelessWidget {
+  listview_Boxs({
     super.key,
   });
   List<CardMdel> cardsview = [
@@ -20,6 +20,7 @@ class listview_item extends StatelessWidget {
     return SizedBox(
       height: 115,
       child: ListView.builder(
+        physics: const BouncingScrollPhysics(),
         itemCount: cardsview.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
