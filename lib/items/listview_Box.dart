@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/items/Boxs_item.dart';
+import 'package:news_app/items/boxs_item.dart';
 import 'package:news_app/models/card_model.dart';
 
 // ignore: must_be_immutable, camel_case_types

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/items/News_item.dart';
+import 'package:news_app/items/news_item.dart';
 
 // ignore: camel_case_types
 class News_list_view extends StatelessWidget {

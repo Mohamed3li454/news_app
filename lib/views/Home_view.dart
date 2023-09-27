@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/items/News_listview.dart';
-import 'package:news_app/items/listview_Box.dart';
+import 'package:news_app/items/news_listview.dart';
+import 'package:news_app/items/listview_box.dart';
 
 // ignore: camel_case_types
 class Home_view extends StatelessWidget {

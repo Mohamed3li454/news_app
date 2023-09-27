@@ -18,9 +18,9 @@ class News_item extends StatelessWidget {
           height: 10,
         ),
         const Text(
+            "dfjfhfdjkbdskjfdbkjsdfbjkfbjkdfbdjkfbdsjkbjkbjkfbjkbdsjkbdsjkfsbfjkfbkdsjbkfd",
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            "fgjfdgkjdfgkjjkfkgkgndfgndsfdsfsdfsdfsdfdfdfdsfsdfsdfdfgdfghdfjkhdlgkhfkhksg",
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.w400)),
         const Text(
           maxLines: 2,
