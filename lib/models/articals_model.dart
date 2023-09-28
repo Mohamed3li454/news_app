@@ -2,7 +2,7 @@
 class Articals_model {
   Articals_model(
       {required this.image, required this.title, required this.subtitle});
-  final String image;
-  final String title;
-  final String subtitle;
+  final String? image;
+  final String? title;
+  final String? subtitle;
 }

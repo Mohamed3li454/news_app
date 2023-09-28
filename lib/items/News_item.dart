@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/models/articals_model.dart';
 
 // ignore: camel_case_types
 class News_item extends StatelessWidget {
-  const News_item({super.key});
-
+  const News_item({super.key, required this.articalsmodel});
+  final Articals_model articalsmodel;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -11,22 +12,21 @@ class News_item extends StatelessWidget {
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(6),
-          child: Image.asset("assets/business.jpeg",
+          child: Image.network(articalsmodel.image ?? "",
               fit: BoxFit.fill, height: 200, width: double.infinity),
         ),
         const SizedBox(
           height: 10,
         ),
-        const Text(
-            "dfjfhfdjkbdskjfdbkjsdfbjkfbjkdfbdjkfbdsjkbjkbjkfbjkbdsjkbdsjkfsbfjkfbkdsjbkfd",
+        Text(articalsmodel.title ?? "gg",
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.w400)),
-        const Text(
+            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w400)),
+        Text(
+          articalsmodel.subtitle ?? "gg",
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
-          "jkfkjdfbdbfkjfdsfsddsadasdasdasfdsfsdfsdfdsfdfsdfsdfsdfdsfdfbkdsf",
-          style: TextStyle(fontSize: 16, color: Colors.grey),
+          style: const TextStyle(fontSize: 16, color: Colors.grey),
         )
       ],
     );
