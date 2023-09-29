@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/items/news_listview.dart';
 import 'package:news_app/items/listview_box.dart';
+import 'package:news_app/items/news_listview_builder.dart';
 
 // ignore: camel_case_types
 class Home_view extends StatelessWidget {
@@ -36,7 +36,7 @@ class Home_view extends StatelessWidget {
                 const SliverToBoxAdapter(
                   child: SizedBox(height: 12),
                 ),
-                const News_list_view()
+                const new_listview_biulder()
               ],
             )),
       ),

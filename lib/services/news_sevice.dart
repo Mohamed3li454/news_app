@@ -12,8 +12,8 @@ class News_Service {
     var response = await dio.get(
         "https://newsapi.org/v2/top-headlines?country=us&apiKey=a27c080961c145d5b64a7242f039458f");
     // ignore: unused_local_variable
-    Map<String, dynamic> jsondata = response.data;
-    List<dynamic> articles = jsondata['articles'];
+    var jsondata = response.data;
+    var articles = jsondata['articles'];
     List<Articals_model> articleslist = [];
     for (var artical in articles) {
       Articals_model articalmodel = Articals_model(

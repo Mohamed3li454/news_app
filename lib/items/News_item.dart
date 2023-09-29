@@ -12,18 +12,20 @@ class News_item extends StatelessWidget {
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(6),
-          child: Image.network(articalsmodel.image ?? "",
-              fit: BoxFit.fill, height: 200, width: double.infinity),
+          child: articalsmodel.image != null
+              ? Image.network(articalsmodel.image!,
+                  fit: BoxFit.fill, height: 200, width: double.infinity)
+              : Image.asset("assets/image_not_available.png"),
         ),
         const SizedBox(
           height: 10,
         ),
-        Text(articalsmodel.title ?? "gg",
+        Text(articalsmodel.title ?? "",
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w400)),
         Text(
-          articalsmodel.subtitle ?? "gg",
+          articalsmodel.subtitle ?? "",
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
           style: const TextStyle(fontSize: 16, color: Colors.grey),
