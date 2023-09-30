@@ -14,7 +14,7 @@ class listview_Boxs extends StatelessWidget {
         text: "",
         categoryname: "entertainment",
         image: "assets/entertainment.jpeg"),
-    CardMdel(text: "", categoryname: "", image: "assets/health.jpeg"),
+    CardMdel(text: "", categoryname: "health", image: "assets/health.jpeg"),
     CardMdel(
         text: "Science", categoryname: "science", image: "assets/science.jpeg"),
     CardMdel(text: "", categoryname: "technology", image: "assets/tech.jpeg"),
