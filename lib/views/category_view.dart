@@ -9,6 +9,7 @@ class category_view extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(
+        physics: const BouncingScrollPhysics(),
         slivers: [
           new_listview_biulder(category: category),
         ],
