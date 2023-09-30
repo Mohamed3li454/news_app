@@ -8,12 +8,16 @@ class listview_Boxs extends StatelessWidget {
     super.key,
   });
   List<CardMdel> cardsview = [
-    CardMdel(text: "", image: "assets/Sports.jpeg"),
-    CardMdel(text: "", image: "assets/business.jpeg"),
-    CardMdel(text: "", image: "assets/entertainment.jpeg"),
-    CardMdel(text: "", image: "assets/health.jpeg"),
-    CardMdel(text: "Science", image: "assets/science.jpeg"),
-    CardMdel(text: "", image: "assets/tech.jpeg"),
+    CardMdel(text: "", categoryname: "sports", image: "assets/Sports.jpeg"),
+    CardMdel(text: "", categoryname: "business", image: "assets/business.jpeg"),
+    CardMdel(
+        text: "",
+        categoryname: "entertainment",
+        image: "assets/entertainment.jpeg"),
+    CardMdel(text: "", categoryname: "", image: "assets/health.jpeg"),
+    CardMdel(
+        text: "Science", categoryname: "science", image: "assets/science.jpeg"),
+    CardMdel(text: "", categoryname: "technology", image: "assets/tech.jpeg"),
   ];
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,7 @@
 class CardMdel {
-  String? text;
+  String categoryname;
+  String text;
   dynamic image;
-  CardMdel({required this.text, required this.image});
+  CardMdel(
+      {required this.text, required this.image, required this.categoryname});
 }

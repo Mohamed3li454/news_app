@@ -7,10 +7,10 @@ class News_Service {
   News_Service(this.dio);
   final Dio dio;
 
-  Future<List<Articals_model>> getnews() async {
+  Future<List<Articals_model>> getnews({required String category}) async {
     // ignore: unused_local_variable
     var response = await dio.get(
-        "https://newsapi.org/v2/top-headlines?country=us&apiKey=a27c080961c145d5b64a7242f039458f");
+        "https://newsapi.org/v2/top-headlines?country=us&apiKey=a27c080961c145d5b64a7242f039458f&category=$category");
     // ignore: unused_local_variable
     var jsondata = response.data;
     var articles = jsondata['articles'];

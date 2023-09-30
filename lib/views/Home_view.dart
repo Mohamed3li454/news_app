@@ -36,7 +36,9 @@ class Home_view extends StatelessWidget {
                 const SliverToBoxAdapter(
                   child: SizedBox(height: 12),
                 ),
-                const new_listview_biulder()
+                const new_listview_biulder(
+                  category: "general",
+                )
               ],
             )),
       ),
